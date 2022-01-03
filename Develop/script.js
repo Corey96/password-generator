@@ -2,9 +2,9 @@
 var generateBtn = document.querySelector("#generate");
 var passwordCharSet = '';
 const key_strings = {
-  lowercase: "a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z",
-  uppercase: "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z",
-  numbers: "0,1,2,3,4,5,6,7,8,9",
+  lowercase: "abcdefghijklmnopqrstuvwxyz",
+  uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  numbers: "0123456789",
   symbols: "~`!@#$%^&*()_-+={[}]|\:;'<,>.?/",
 }
 
@@ -14,19 +14,6 @@ console.log("Button Clicked :)")
 
 var length = window.prompt ("Length of password between 8 - 128 characters", "Enter Here")
 console.log(length)
-
-// If the user clicks cancel the below will happen...
-if (!passwordCharSet) {
-  alert("You must enter a valid value to continue");
-}
-
-// If the user selects an invalid number then the below will happen...
-else if (passwordCharSet < 8 || passwordCharSet > 128) {
-  passwordCharSet = parseInt(
-    alert(
-      "Your password must be between 8 - 128 characters long. Please select a valid number"
-    )
-  );
 
 
 
@@ -64,7 +51,7 @@ return password;
 
 
 }
-}
+
 
 
 // Write password to the #password input
