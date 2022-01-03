@@ -13,25 +13,30 @@ function generatePassword() {
 console.log("Button Clicked :)")
 
 var length = window.prompt ("Length of password between 8 - 128 characters", "Enter Here")
+console.log(length)
 
 var lowercase = window.confirm("Would you like to use lowercase letters?");
 if (lowercase) {
   passwordCharSet += key_strings.lowercase;
+  console.log("lowercase selected")
 };
 
 var uppercase = window.confirm("Would you like to use upper case letters?");
 if (uppercase) {
   passwordCharSet += key_strings.uppercase;
+  console.log("uppercase selected")
 };
 
 var symbols = window.confirm ("Would you like to use symbols?");
 if (symbols) {
-  passwordCharSet += key_strings.symbols
+  passwordCharSet += key_strings.symbols;
+  console.log("symbols selected")
 }
 
 var numbers = window.confirm ("Would you like to use numbers?");
 if (numbers) {
   passwordCharSet += key_strings.numbers;
+  console.log("numbers selected")
 };
 
 var password = "";
