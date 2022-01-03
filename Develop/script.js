@@ -15,8 +15,22 @@ console.log("Button Clicked :)")
 var length = window.prompt ("Length of password between 8 - 128 characters", "Enter Here")
 console.log(length)
 
+// If the user clicks cancel the below will happen...
+if (!length) {
+  alert("You must enter a valid value to continue");
+}
 
+// If the user selects an invalid number then the below will happen...
+else if (length < 8 || length > 128) {
+  passwordCharSet = parseInt(
+    alert(
+      "Your password must be between 8 - 128 characters long. Please select a valid number"
+    )
+  );
 
+} 
+
+else{     
 var lowercase = window.confirm("Would you like to use lowercase letters?");
 if (lowercase) {
   passwordCharSet += key_strings.lowercase;
@@ -51,7 +65,7 @@ return password;
 
 
 }
-
+}
 
 
 // Write password to the #password input
