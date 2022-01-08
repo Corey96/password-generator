@@ -1,15 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-/*
-var passwordCharSet = '';
-const key_strings = {
-  lowercase: "abcdefghijklmnopqrstuvwxyz",
-  uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  numbers: "0123456789",
-  symbols: "~`!@#$%^&*()_-+={[}]|\:;'<,>.?/",
-}
-*/
 
 function generatePassword() {
 // Check to see button works
@@ -23,15 +14,15 @@ const key_strings = {
 }
 
 var length = window.prompt("Length of password between 8 - 128 characters", "Enter Here")
-console.log(length)
 
-// If the user clicks cancel the below will happen...
+
+// If the user clicks cancel the below will happen
 if (!length) {
-  alert("You must enter a valid number to continue");
+  alert("You must enter a number to continue");
   return ""
 }
 
-// If the user selects an invalid number then the below will happen...
+// If the user selects an invalid number then the below will happen
 else if (length < 8 || length > 128) {
   passwordCharSet = parseInt(
     alert(
@@ -41,14 +32,12 @@ else if (length < 8 || length > 128) {
 return ""
 } 
 
- 
+ // User password choice
 var lowercase = window.confirm("Would you like to use lowercase letters?");
 if (lowercase) {
   passwordCharSet += key_strings.lowercase;
   console.log("lowercase selected")
-  console.log(passwordCharSet)
 }
-
 
 var uppercase = window.confirm("Would you like to use upper case letters?");
 if (uppercase) {  
@@ -68,18 +57,18 @@ if (numbers) {
   console.log("numbers selected")
 };
 
+// If user clicks cancel on all confirms alert will pop up
 if (lowercase == false && uppercase == false && symbols == false && numbers == false){
   alert ("Please select 1 option") 
   return ""
 }
 
+// Users password selection will randomize and return
 console.log(passwordCharSet)
 var password = "";
 for (let i = 0; i < length; i++) {
   password += passwordCharSet[Math.floor(Math.random() * passwordCharSet.length)]
   console.log (password)
-
-  
 }
 
 return password;
