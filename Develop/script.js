@@ -15,7 +15,6 @@ const key_strings = {
 
 var length = window.prompt("Length of password between 8 - 128 characters", "Enter Here")
 
-
 // If the user clicks cancel the below will happen
 if (!length) {
   alert("You must enter a number to continue");
@@ -73,9 +72,6 @@ for (let i = 0; i < length; i++) {
 
 return password;
 }
-
-
-
 
 
 
