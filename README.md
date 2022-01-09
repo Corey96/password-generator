@@ -15,7 +15,7 @@ No errors appear within the console when inspected.
 See below for gif of the site: 
 
 
-![Coreys Password Generator](https://user-images.githubusercontent.com/94629450/148689398-00e4d061-a4f8-4b1a-8161-3bbadfde99d9.gif)
+![Coreys Password Generator](https://user-images.githubusercontent.com/94629450/148690007-e84fb245-c41f-4e32-8f02-c4e25c0a623a.gif)
 
 
 
