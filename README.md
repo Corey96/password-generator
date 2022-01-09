@@ -15,6 +15,8 @@ No errors appear within the console when inspected.
 See below for gif of the site: 
 
 
+![Coreys Password Generator](https://user-images.githubusercontent.com/94629450/148689398-00e4d061-a4f8-4b1a-8161-3bbadfde99d9.gif)
+
 
 
 Deployed application URL: http://127.0.0.1:5501/Develop/index.html
