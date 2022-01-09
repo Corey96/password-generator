@@ -19,5 +19,5 @@ See below for gif of the site:
 
 
 
-Deployed application URL: http://127.0.0.1:5501/Develop/index.html
+Deployed application URL: https://corey96.github.io/password-generator/
 Github repository URL: https://github.com/Corey96/password-generator
